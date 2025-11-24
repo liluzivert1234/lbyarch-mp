@@ -36,14 +36,26 @@ This program implements the DAXPY (Double-precision A times X Plus Y) operation,
 - **Number of Runs**: 30
 - **Sample Results Displayed**: First 10 elements
 
-### Execution Time Results (30-run average)
-
-Based on the screenshot provided:
+### Execution Time Results (2^28 30-run average)
 
 | Implementation | Average Time (ms) | Performance |
 |----------------|-------------------|-------------|
 | C DAXPY        | 2755.3702 ms      | Baseline    |
 | x86-64 ASM DAXPY | 916.4356 ms     | **3.0x faster** |
+
+### Execution Time Results (2^24 30-run average)
+
+| Implementation | Average Time (ms) | Performance |
+|----------------|-------------------|-------------|
+| C DAXPY        | 180.1103 ms      | Baseline    |
+| x86-64 ASM DAXPY | 62.6436 ms     | **3.0x faster** |
+
+### Execution Time Results (2^20 30-run average)
+
+| Implementation | Average Time (ms) | Performance |
+|----------------|-------------------|-------------|
+| C DAXPY        | 11.9274 ms      | Baseline    |
+| x86-64 ASM DAXPY | 4.3185 ms     | **3.0x faster** |
 
 ### Performance Analysis
 The assembly implementation demonstrates **significant performance improvement** over the C implementation:
