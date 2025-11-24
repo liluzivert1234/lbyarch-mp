@@ -32,7 +32,7 @@ This program implements the DAXPY (Double-precision A times X Plus Y) operation,
 
 ### Test Configuration
 - **Constant A**: 2.0
-- **Array Size**: 536,870,912 elements (2^29)
+- **Array Size**: 268,435,456 elements (2^28)
 - **Number of Runs**: 30
 - **Sample Results Displayed**: First 10 elements
 
